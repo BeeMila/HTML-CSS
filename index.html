@@ -19,10 +19,26 @@
             <!--El h1 deberia usarse solo una vez por html-->
         </header>
         
+        <nav><!--Barra de navegacion-->
+            <a href="#">Nosotros</a> <!--href es un atributo-->
+            <a href="#">Sobre mi</a> 
+            <a href="#">Inicio</a> 
+            <a href="#">Clientes</a> 
+        </nav>    
+
         <section> <!--Si se tiene un heading y no esta en el main, debes usar section-->
             <h2>Una web freelancer</h2> 
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-anchor" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2" />
+                <circle cx="12" cy="6" r="3" />
+            </svg>
+            
             <p>Un párrafo</p> <!--Parrafo -> <p> -->
-            <p>Los         espacios          no          importan</p> 
+            <p>Los         espacios          no          importan</p>
+            
+            <a href="#">Contactar</a>
         </section>
 
         <main> <!--Contenido princopal-->
@@ -30,16 +46,42 @@
 
             <section>
                 <h3>Diseños</h3>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="6" height="6" rx="1" />
+                    <rect x="4" y="14" width="6" height="6" rx="1" />
+                    <rect x="14" y="14" width="6" height="6" rx="1" />
+                    <line x1="14" y1="7" x2="20" y2="7" />
+                    <line x1="17" y1="4" x2="17" y2="10" />
+                </svg>
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate ipsa neque nihil.   </p>
             </section>
             
             <section>
                 <h3>Aplicaciones</h3>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ballon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14 8a2 2 0 0 0 -2 -2" />
+                    <path d="M6 8a6 6 0 1 1 12 0c0 4.97 -2.686 9 -6 9s-6 -4.03 -6 -9" />
+                    <path d="M12 17v1a2 2 0 0 1 -2 2h-3a2 2 0 0 0 -2 2" />
+                </svg>
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate ipsa neque nihil.   </p>
             </section>
             
             <section>
                 <h3>E-Commerce</h3>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+                    <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+                    <line x1="9.7" y1="17" x2="14.3" y2="17" />
+                </svg>
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate ipsa neque nihil.   </p>            
             </section>
             
@@ -47,6 +89,37 @@
         
         <section>
             <h2>Contacto</h2>
+
+            <form> <!--Formularios-->
+                <fieldset>
+                    <legend>Contactame llenando todos los campos</legend> <!--Describo al formulario-->
+
+                    <div> <!--Uso div para crear divisiones que no siguen ninguna estructura como section o h-->
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Aca no hay nada"> <!--Esta tambien el type tel, el cual sirve para abrir el teclado numerico en el celuolar, aso como el email, y number-->
+                    </div>
+
+                    <div>
+                        <label>Telefono</label>
+                        <input type="text" placeholder="Aca no hay nada"> <!--Esta tambien el type tel, el cual sirve para abrir el teclado numerico en el celuolar, aso como el email, y number-->
+                    </div>  
+
+                    <div>
+                        <label>Correo</label>
+                        <input type="text" placeholder="Aca no hay nada"> <!--Esta tambien el type tel, el cual sirve para abrir el teclado numerico en el celuolar, aso como el email, y number-->
+                    </div>  
+
+                    <div>
+                        <label>Nombre</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="enviar">
+                    </div>
+                </fieldset>
+            </form>
+
         </section>
         
         <footer> <!--Pie de la pagina web-->
